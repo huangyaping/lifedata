@@ -24,7 +24,14 @@
     <br>
     <button id="addData">Add Data</button>
     <script>
-        $.getJSON('https://huangyaping.github.io/lifedata/relationship.json?callback=aa', function(data){});
+        function pr(data) {
+        	console.log(data);
+            console.log(JSON.parse(data);
+        }
+        $.getJSON('https://huangyaping.github.io/lifedata/relationship.json?callback=pr', function(data){
+            console.log(data);
+            console.log(JSON.parse(data);
+        });
         var labels = [];
         var data = [];
         for (var i = 0; i < 100; i++) {
