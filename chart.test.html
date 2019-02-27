@@ -24,18 +24,8 @@
     <br>
     <button id="addData">Add Data</button>
     <script>
-        function pr(data) {
-        	console.log(data);
-        }
-        $.getJSON('https://huangyaping.github.io/lifedata/relationship.json?callback=pr', function(data){
-            console.log(data);
-        });
         var labels = [];
         var data = [];
-        for (var i = 0; i < 100; i++) {
-            labels[i] = i;
-            data[i] = randomScalingFactor();
-        }
         var config = {
             type: 'line',
             data: {
@@ -85,6 +75,15 @@
             var ctx = document.getElementById('canvas').getContext('2d');
             window.myLine = new Chart(ctx, config);
         };
+
+        $.getJSON('https://huangyaping.github.io/lifedata/relationship.json?callback=', function(data){
+        	for (var i = 0; i < data.length; i++) {
+        		config.data.labels.push(data[0]);
+        		config.data.datasets[0].data.push(data[1]);
+        	}
+
+            window.myLine.update();
+        });
 
         document.getElementById('addData').addEventListener('click', function() {
             if (config.data.datasets.length > 0) {
