@@ -74,16 +74,17 @@
         window.onload = function() {
             var ctx = document.getElementById('canvas').getContext('2d');
             window.myLine = new Chart(ctx, config);
+            
+	        $.getJSON('https://huangyaping.github.io/lifedata/relationship.json?callback=pr', function(data){
+	        	for (var i = 0; i < data.length; i++) {
+	        		config.data.labels.push(data[i][0]);
+	        		config.data.datasets[0].data.push(data[i][1]);
+	        	}
+
+	            window.myLine.update();
+	        });
         };
 
-        $.getJSON('https://huangyaping.github.io/lifedata/relationship.json?callback=', function(data){
-        	for (var i = 0; i < data.length; i++) {
-        		config.data.labels.push(data[i][0]);
-        		config.data.datasets[0].data.push(data[i][1]);
-        	}
-
-            window.myLine.update();
-        });
 
         document.getElementById('addData').addEventListener('click', function() {
             if (config.data.datasets.length > 0) {
