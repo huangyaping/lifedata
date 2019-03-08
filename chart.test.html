@@ -91,7 +91,7 @@
                 config.data.labels.push(config.data.labels.length+1);
 
                 config.data.datasets.forEach(function(dataset) {
-                    dataset.data.push(randomScalingFactor());
+                    dataset.data.push(Math.floor(Math.random()*10-1));
                 });
 
                 window.myLine.update();
