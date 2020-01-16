@@ -1,0 +1,43 @@
+questions:
+  - itemNo: 1.1
+    sentences:
+      - sentence: I need to eat something soon. I $ hungry.
+        tuples:
+          - x: am
+            a: am getting
+  - itemNo: 1.1
+    sentences:
+      - sentence: I don't have anywhere to live. I $ for an apartment.
+        tuples:
+          - x: look
+            a: am looking
+  - itemNo: 1.1
+    sentences:
+      - sentence: We need to leave soon. It $ late.
+        tuples:
+          - x: is
+            a: is getting
+  - itemNo: 1.1
+    sentences:
+      - sentence: They don't need their car anymore. They $ sell it.
+        tuples:
+          - x: try to
+            a: are trying to
+  - itemNo: 1.1
+    sentences:
+      - sentence: Things are not good at work. The company $ money.
+        tuples:
+          - x: lose
+            a: is losing
+  - itemNo: 1.1
+    sentences:
+      - sentence: It isn't true what they said. The $.
+        tuples:
+          - x: lie
+            a: are lying
+  - itemNo: 1.1
+    sentences:
+      - sentence: We are going to get wet. It $.
+        tuples:
+          - x: rain
+            a: is starting to rain
