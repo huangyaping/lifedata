@@ -1,43 +1,109 @@
 questions:
-  - itemNo: 1.1
+  - itemNo: 3.0
     sentences:
-      - sentence: I need to eat something soon. I $ hungry.
+      - sentence: The water $. Can you turn it off?
         tuples:
-          - x: am
-            a: am getting
-  - itemNo: 1.1
+          - x: boil
+            a: boiling
+  - itemNo: 3.0
     sentences:
-      - sentence: I don't have anywhere to live. I $ for an apartment.
+      - sentence: Water $ at 100 degrees Celsius.
         tuples:
-          - x: look
-            a: am looking
-  - itemNo: 1.1
+          - x: boil
+            a: boils
+  - itemNo: 3.0
     sentences:
-      - sentence: We need to leave soon. It $ late.
+      - sentence: I always $ in the afternoon.
         tuples:
-          - x: is
-            a: is getting
-  - itemNo: 1.1
+          - x: hungry
+            a: get hungry
+  - itemNo: 3.0
     sentences:
-      - sentence: They don't need their car anymore. They $ sell it.
+      - sentence: Kate wants to work in Italy, so she $ Italian.
         tuples:
-          - x: try to
-            a: are trying to
-  - itemNo: 1.1
+          - x: learn
+            a: is learning
+  - itemNo: 3.0
     sentences:
-      - sentence: Things are not good at work. The company $ money.
+      - sentence: Most people $ swim when they are children.
         tuples:
-          - x: lose
-            a: is losing
-  - itemNo: 1.1
+          - x: learn
+            a: learn to
+  - itemNo: 3.0
     sentences:
-      - sentence: It isn't true what they said. The $.
+      - sentence: I $ work by car.
         tuples:
-          - x: lie
-            a: are lying
-  - itemNo: 1.1
+          - x: go to
+            a: always go to
+  - itemNo: 3.0
     sentences:
-      - sentence: We are going to get wet. It $.
+      - sentence: You $ computer games.
         tuples:
-          - x: rain
-            a: is starting to rain
+          - x: always play
+            a: are always playing
+  - itemNo: 3.1
+    sentences:
+      - sentence: The moon $ around the earth $ about 27 days.
+        tuples:
+          - x: go
+            a: goes
+          - x: 
+            a: in
+  - itemNo: 3.1
+    sentences:
+      - sentence: I hear you $ a new job. How $ on?
+        tuples:
+          - x: get
+            a: have got
+          - x: do you get
+            a: are you getting
+  - itemNo: 3.1
+    sentences:
+      - sentence: They don't get on well. They $.
+        tuples:
+          - x: always argue
+            a: are always arguing
+  - itemNo: 3.2
+    sentences:
+      - sentence: Let's go out. $ now.
+        tuples:
+          - x: it / not / rain
+            a: It is not raining
+  - itemNo: 3.2
+    sentences:
+      - sentence: Julia is very good at languages. She $ four languages very well.
+        tuples:
+          - x: speak
+            a: speaks
+  - itemNo: 3.2
+    sentences:
+      - sentence: Hurry up. Everybody $ for you.
+        tuples:
+          - x: wait
+            a: is waiting
+  - itemNo: 3.2
+    sentences:
+      - sentence: $ to the radio? No, you can turn it off.
+        tuples:
+          - x: you / listen
+            a: Are you listening
+  - itemNo: 3.2
+    sentences:
+      - sentence: The River Nile $ the Mediterranean.
+        tuples:
+          - x: flow into
+            a: flows into
+  - itemNo: 3.2
+    sentences:
+      - sentence: We usually grow vegetables in our garden, but this year we $ any.
+        tuples:
+          - x: not grow
+            a: are not growing
+  - itemNo: 3.2
+    sentences:
+      - sentence: Rachel is in New York right now. She $ the Park Hotel. She always $ there when she in New York.
+        tuples:
+          - x: stay at
+            a: is staying at
+          - x: stay
+            a: stays
